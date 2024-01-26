@@ -81,7 +81,7 @@ if user_result[0] == 0:
 else:
     color = 'red'
 
-# rbp
+
 st.header('Albumin Value Graph (Yours vs Others)')
 fig_Albumin = plt.figure()
 ax3 = sns.scatterplot(x='Age', y='Albumin', data=df, hue='Outcome', palette='rocket')
@@ -91,7 +91,7 @@ plt.yticks(np.arange(10, 90, 5))
 plt.title('0 - Healthy, 1 - Hepatitis, 2 - Fibrosis, 3 - Cirrhosis')
 st.pyplot(fig_Albumin)
 
-# chol, 2013 damn it
+
 st.header('Alkaline Phosphate Value Graph (Yours vs Others)')
 fig_Alkaline_Phosphate = plt.figure()
 ax9 = sns.scatterplot(x='Age', y='Alkaline Phosphate', data=df, hue='Outcome', palette='rainbow')
@@ -101,7 +101,7 @@ plt.yticks(np.arange(0, 440, 20))
 plt.title('0 - Healthy, 1 - Hepatitis, 2 - Fibrosis, 3 - Cirrhosis')
 st.pyplot(fig_Alkaline_Phosphate)
 
-# Hmax
+
 st.header('Alanine Aminotransferase Value Graph (Yours vs Others)')
 fig_Alanine_Aminotransferase = plt.figure()
 ax5 = sns.scatterplot(x='Age', y='Alanine Aminotransferase', data=df, hue='Outcome', palette='mako')
@@ -111,7 +111,7 @@ plt.yticks(np.arange(0, 340, 20))
 plt.title('0 - Healthy, 1 - Hepatitis, 2 - Fibrosis, 3 - Cirrhosis')
 st.pyplot(fig_Alanine_Aminotransferase)
 
-# STDIE
+
 st.header('Aspartate Aminotransferase Value Graph (Yours vs Others)')
 fig_Aspartate_Aminotransferase = plt.figure()
 ax11 = sns.scatterplot(x='Age', y='Aspartate Aminotransferase', data=df, hue='Outcome', palette='flare')
@@ -121,7 +121,7 @@ plt.yticks(np.arange(0, 340, 20))
 plt.title('0 - Healthy, 1 - Hepatitis, 2 - Fibrosis, 3 - Cirrhosis')
 st.pyplot(fig_Aspartate_Aminotransferase)
 
-# FCV
+
 st.header('Bilirubin Value Graph (Yours vs Others)')
 fig_Bilirubin = plt.figure()
 ax13 = sns.scatterplot(x='Age', y='Bilirubin', data=df, hue='Outcome', palette='crest')
