@@ -15,6 +15,7 @@ from sklearn import preprocessing
 st.markdown('''
 # Liver Disease Detector 
 - This app detects if you have a Hepatic (Liver) disaese such as Hepatitis, Fibrosis or Cirrhosis based on Machine Learning!
+- App built by Anshuman Shukla and Pranav Sawant of Team Skillocity.
 - Note: User inputs are taken from the sidebar. It is located at the top left of the page (arrow symbol). The values of the parameters can be changed from the sidebar.
 ''')
 st.write('---')
@@ -157,7 +158,7 @@ st.pyplot(fig_Bilirubin)
 
 st.header('Serum Cholinesterase	 Value Graph (Yours vs Others)')
 fig_Serum_Cholinesterase = plt.figure()
-ax13 = sns.scatterplot(x = 'Age', y = 'Serum Cholinesterase	', data = df, hue = 'Outcome', palette='magma')
+ax13 = sns.scatterplot(x = 'Age', y = 'Serum Cholinesterase', data = df, hue = 'Outcome', palette='magma')
 ax14 = sns.scatterplot(x = user_data['Age'], y = user_data['Serum Cholinesterase'], s = 150, color = color)
 plt.xticks(np.arange(0,100,5))
 plt.yticks(np.arange(0,20,1))
@@ -228,8 +229,13 @@ st.write('Dataset License: Open Data Commons Public Domain Dedication and Licens
 st.subheader('Lets raise awareness for hepatic health and increase awareness about hepatic diseases.')
 st.write("World Hepatitis Day: 28 July")
 
+#st.sidebar.subheader("""An article about this app: https://proskillocity.blogspot.com/2021/05/heart-disease-detector-web-app.html""")
+
+
 st.write("Disclaimer: This is just a learning project based on one particular dataset so please do not depend on it to actually know if you have any hepatic diseases or not. It might still be a false positive or false negative. A doctor is still the best fit for the determination of such diseases.")
 
-#image = Image.open('killocity (3).png')
+image = Image.open('killocity (3).png')
 
-#st.image(image, use_column_width=True)
+st.image(image, use_column_width=True)
+
+st.sidebar.subheader("An article about this app: https://proskillocity.blogspot.com/2021/06/hepatic-disease-detector.html")
